@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--creates the document type for rules to follow-->
+<html lang="en"> <!--signifies main language of the document itself, what language the majority of the content is-->
+    <head> <!--indents to identify parents and child for organization-->
+        <meta charset="utf-8"> <!--this needs to be first, utf-8 universal text format 8 is western alphabet-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is needed for responsive webdesign, so it will not scale automatically-->
+        <title>HTML5 Semantic Code Example</title> <!--"What's the page about", title when being searched-->
+        <!--css here-->
+    </head> <!--Head tag is all for what the browser will do-->
+    <body> <!--the actual content of the webpage-->
+        <header>
+            <h1>Proper Use of html5 Semantic Markup</h1>  <!-- main heading of a page- only use h1 once per page-->
+        </header>
+        <nav> <!--NAV is all internal links or anchors to the page-->
+            <h2 class="sr-only">main navigation</h2> <!--titles the main navigation, hidden with css-->
+            <ul>
+                <li><a href="#latin-dummy">LINK 1</a></li>
+                <li><a href="#">LINK 2</a></li>
+                <li><a href="#">LINK 3</a></li>
+            </ul>
+        </nav>
+        <main> <!--grouping content together-->
+            <section id="latin-dummy">
+                <h2>latin "dummy" text</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <!--informational images-->
+                <figure>
+                    <img src="http://placehold.it/300x300" alt="verbal description of image"> <!--Don't need to include image of, just give description in alt-->
+                    <figcaption>image title</figcaption> <!--name under image or hide it-->
+                </figure>
+                <!--supplementary info-->
+                <aside>
+                    <h2>supplementary latin links</h2>
+                    <ul>
+                        <li><a href="#">how to learn latin</a></li>
+                    </ul>
+                </aside>
+            </section> <!--groups the section title, paragraph and image into the section-->
+        </main>
+        <!--Nothing to do with the main content-->
+        <aside>
+            <h2>supplementary social media links</h2>
+            <ul>
+                <li><a href="#">twitter</a></li>
+            </ul>
+        </aside>
+
+        <footer> <!--belongs to the site itself, mostly copyrights and additional info of creator-->
+            <p>designed by me</p>
+            <address>email@colorado.edu</address>
+            <small>&copy; 2021</small> <!--&copy; is a special character-->
+        </footer>
+    </body>
+
+</html>
