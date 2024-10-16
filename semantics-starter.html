@@ -5,21 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is needed for responsive webdesign, so it will not scale automatically-->
         <title>HTML5 Semantic Code Example</title> <!--"What's the page about", title when being searched-->
         <!--css here-->
+        <link href="css/semantic-design.css" rel="stylesheet"> <!--Need to tell that it is a stylesheet, also folder the .css is located-->
     </head> <!--Head tag is all for what the browser will do-->
     <body> <!--the actual content of the webpage-->
+        <div class="container"> <!--creates a cap on how wide to make more readable-->
         <header>
             <h1>Proper Use of html5 Semantic Markup</h1>  <!-- main heading of a page- only use h1 once per page-->
         </header>
         <nav> <!--NAV is all internal links or anchors to the page-->
             <h2 class="sr-only">main navigation</h2> <!--titles the main navigation, hidden with css-->
             <ul>
-                <li><a href="#latin-dummy">LINK 1</a></li>
-                <li><a href="#">LINK 2</a></li>
-                <li><a href="#">LINK 3</a></li>
+                <li><a href="#Latin-dummy">Lorem Ipsum</a></li>
+                <li><a href="#Hipster-ipsum">Hipster Ipsum</a></li>
+                <li><a href="#">Dummy Link</a></li>
             </ul>
         </nav>
         <main> <!--grouping content together-->
-            <section id="latin-dummy">
+            <section id="latin-dummy"> <!--these create anchor tags for the main navigation above-->
                 <h2>latin "dummy" text</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -27,8 +29,23 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <!--informational images-->
-                <figure>
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Per rutrum sit ac parturient efficitur ultricies viverra. Lorem feugiat dapibus in; felis amet turpis. Est phasellus bibendum porta per adipiscing maecenas. Nisi sit consequat condimentum in arcu fermentum phasellus suspendisse. Ac neque ullamcorper nisl curae at arcu maximus. Nostra tortor sed mus tellus aptent, tristique fringilla. Ligula penatibus at scelerisque amet vulputate. Elit quam fusce finibus vehicula praesent eleifend adipiscing consequat nibh.
+                </p>
+                <p>
+                    Montes pellentesque conubia conubia finibus cubilia id maximus auctor. Primis praesent malesuada neque aenean lectus natoque in. Dui integer justo gravida conubia eget massa praesent. Purus vel laoreet montes facilisis tortor litora. Curae facilisi imperdiet est, accumsan fusce penatibus eu posuere. Cras varius nisl pretium nascetur pulvinar. Mauris augue consectetur duis donec leo maecenas posuere porta. Orci neque lacinia volutpat aliquet natoque; efficitur accumsan nisi. Orci molestie elit ullamcorper magna lacus.
+                </p>
+                <p>
+                    Semper nascetur condimentum fermentum integer conubia senectus magna metus. Finibus neque parturient integer sem senectus neque efficitur nisi turpis. Euismod maecenas nascetur fames; hac vivamus maximus non fermentum. Consectetur amet class quisque facilisi nam, parturient mattis volutpat suscipit. Nibh elementum pellentesque semper ut pulvinar sed egestas litora. Mi per gravida bibendum sagittis eget mi. Litora netus sem pretium euismod facilisi, venenatis justo turpis phasellus. Habitant ut tortor turpis quisque urna turpis varius molestie.
+                </p>
+                <p>
+                    Faucibus ultricies mattis facilisis curae at torquent. Tempor ante sed pretium; orci proin erat cursus. Tincidunt non quis sed id odio sagittis. Aliquam maximus taciti dui elementum ut quis nisl nulla. Efficitur integer ex laoreet per in habitant. Mollis efficitur sagittis lobortis neque luctus imperdiet porta rhoncus dictumst. Ornare aliquet rhoncus sit viverra; molestie eu mus class.
+                </p>
+                <p>
+                    Aenean taciti ullamcorper ante erat auctor vivamus nisl pretium. Est neque laoreet primis interdum cubilia neque morbi ex. Imperdiet enim duis accumsan semper quisque quisque placerat augue. Euismod fames morbi finibus, diam turpis ad. Eget facilisi efficitur duis laoreet vivamus dignissim. Ullamcorper nulla fames, ligula hac vulputate bibendum. Quisque sagittis cras quam senectus torquent blandit dignissim hendrerit.
+                </p>
+                    <!--informational images-->
+                <figure> <!--the placehold.it was just a nice way to size a space without finding a photo yet-->
                     <img src="http://placehold.it/300x300" alt="verbal description of image"> <!--Don't need to include image of, just give description in alt-->
                     <figcaption>image title</figcaption> <!--name under image or hide it-->
                 </figure>
@@ -40,6 +57,39 @@
                     </ul>
                 </aside>
             </section> <!--groups the section title, paragraph and image into the section-->
+            <section id="hipster-ipsum">
+                <h2>Hipster Ipsum dummy text</h2>
+                <p>
+                    Yes plz salvia tattooed venmo. Heirloom cronut in fingerstache DIY cold-pressed DSA slow-carb adipisicing. Edison bulb same cold-pressed viral activated charcoal swag affogato tofu shoreditch four dollar toast pinterest distillery iPhone YOLO small batch. DIY meggings shaman, jean shorts succulents ea fixie ennui.
+                </p>
+                <p>
+                    Plaid swag quis twee. Bespoke eiusmod deserunt gentrify. Ullamco art party stumptown, raclette ut asymmetrical ennui craft beer sed kinfolk church-key. Ea kinfolk bitters, pork belly ut pitchfork labore occupy chia VHS hashtag neutral milk hotel mukbang. Exercitation flannel succulents meditation iPhone pariatur meh. Food truck blue bottle esse Brooklyn, hexagon microdosing iceland DSA thundercats single-origin coffee sed.
+                </p>
+                <p>
+                    Chartreuse authentic nostrud synth duis banjo mustache anim quinoa mlkshk adaptogen sed dolore poutine. Man bun retro crucifix selfies reprehenderit. Exercitation hammock venmo taiyaki big mood anim sartorial labore. Activated charcoal vinyl affogato artisan, commodo stumptown eu fingerstache kogi. Waistcoat ea godard jean shorts. Activated charcoal blue bottle tousled gluten-free, jianbing next level schlitz thundercats laboris la croix mumblecore fam fashion axe id. Viral officia hell of chambray chicharrones polaroid.
+                </p>
+                <p>
+                    Copper mug lo-fi gastropub forage williamsburg tofu est affogato lomo blue bottle shoreditch echo park duis deep v. Umami hoodie bicycle rights flannel, deep v kickstarter marfa green juice tousled direct trade craft beer neutral milk hotel artisan mixtape. Sunt tofu culpa, same occaecat craft beer banjo taxidermy. Wayfarers cillum taiyaki listicle pork belly taxidermy lo-fi banjo enamel pin. Meh actually ramps ethical grailed VHS, tbh woke 3 wolf moon veniam shoreditch marfa.
+                </p>
+                <p>
+                    Excepteur nostrud tofu migas marfa enim labore chicharrones. Bruh tote bag food truck hexagon neutra irony activated charcoal franzen +1 blue bottle snackwave same ut. Subway tile church-key in, kogi drinking vinegar ugh cronut neutra air plant. Vice sartorial copper mug, hell of bodega boys salvia sustainable kinfolk yes plz flannel microdosing kogi succulents. Anim proident farm-to-table heirloom, sustainable la croix yuccie aute 3 wolf moon put a bird on it gorpcore grailed. Mollit air plant Brooklyn butcher big mood consequat kombucha.
+                </p>
+                <p>
+                    Master cleanse cliche bruh, YOLO chartreuse tote bag shaman waistcoat air plant. Leggings palo santo bitters, schlitz plaid seitan pickled umami celiac next level yr try-hard semiotics post-ironic. Food truck in leggings chartreuse mixtape pariatur shoreditch sartorial sint vexillologist veniam schlitz kombucha YOLO chillwave. Street art tofu labore DIY trust fund laboris mukbang tousled kitsch jianbing.
+                </p>
+                <p>
+                    Sed forage neutral milk hotel, umami mixtape fanny pack banjo cloud bread lyft chillwave lomo offal in. Gochujang jianbing irony helvetica farm-to-table. Fingerstache hashtag health goth ea wolf meggings proident. Pour-over distillery intelligentsia you probably haven't heard of them consectetur fanny pack.
+                </p>
+                <p>
+                    Humblebrag truffaut actually activated charcoal wayfarers chambray art party viral, in microdosing try-hard. Authentic migas velit tacos meh live-edge. Mollit microdosing fit, keffiyeh keytar hashtag aliquip subway tile stumptown mukbang. Whatever duis af shoreditch.
+                </p>
+                <p>
+                    Pabst chia shabby chic, next level live-edge knausgaard deserunt cliche hell of cold-pressed ennui fashion axe drinking vinegar vegan. Consequat salvia ennui bushwick brunch small batch hot chicken deserunt kogi vibecession. Vaporware gatekeep adipisicing bitters sed, church-key cronut jianbing meditation proident fam. Vaporware celiac iPhone gentrify humblebrag fit cliche et vexillologist keffiyeh fixie single-origin coffee eiusmod fanny pack.
+                </p>
+                <p>
+                Edison bulb tilde lorem veniam YOLO celiac. Mukbang hashtag green juice wayfarers squid normcore iceland la croix single-origin coffee cronut godard quis. Banh mi iceland four loko jianbing. Raclette swag yr, cold-pressed art party fam portland authentic.
+                </p>
+            </section>
         </main>
         <!--Nothing to do with the main content-->
         <aside>
@@ -54,6 +104,6 @@
             <address>email@colorado.edu</address>
             <small>&copy; 2021</small> <!--&copy; is a special character-->
         </footer>
+    </div> <!--end of container-->
     </body>
-
 </html>
