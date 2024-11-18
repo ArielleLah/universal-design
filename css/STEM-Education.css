@@ -77,10 +77,11 @@ h3 {
     width: 100vw;
     height: 100vh;
     grid-template-columns:
-    .75fr 2fr .75fr;
+    1fr 2fr 1fr;
     grid-template-areas:
     "heady  heady   heady"
     "navvy  navvy   navvy"
+    "mainy  mainy   mainy"
     "aside1 mainy   aside2"
     "footy  footy   footy";
 }

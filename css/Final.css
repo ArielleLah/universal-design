@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Roboto&display=swap');
+
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+}
+  
+.skip-link:focus {
+  transform: translateY(0%);
+}
+  
+.skip-link {
+  transition: transform 0.3s;
+}
+
+body {
+    background: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #E0BF1F;
+  }
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
+}
+  
+h1,
+h2,
+h3,
+h4 {
+      font-family: "Gowun Batang", serif;
+      font-weight: normal;
+      font-style: normal;
+      padding: .2em 0;
+}
+  
+h2 {font-size:1.25em;
+    color:#E04C1F
+}
+
+h3 {font-size:1.1em;
+    color:#E06E1F
+}
+h4 {font-size: 1em;
+    color:#E0A71F;
+}
+
+p {
+    margin-bottom: 1.8em;
+    line-height: 1.8em;
+}
+
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 1.5em;
+    border-color: #E04C1F;
+}
+  
+header,
+footer {
+    text-align: center;
+    color: black;
+}
+
+nav{
+    color: black;
+}
+  
+  
+.container { /*mobile*/
+  display: grid;
+  grid-template-columns:
+     1fr;
+  grid-template-areas:
+    "heady"
+    "mainy"
+    "aside1"
+    "aside2"
+    "navvy"
+    "footy";
+  }
+  
+  header {grid-area: heady; background:#E0A71F;}
+  nav {grid-area: navvy; background:#E06E1F;}
+  main {grid-area: mainy; background: black; max-height: 100%;}
+  #Author {grid-area: aside1; background: Black;}
+  #Demographics {grid-area: aside2; background: Black;}
+  footer {grid-area: footy; background: #E0A71F;}
+  
+  
+  nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  
+  nav ul li {
+    list-style: none
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px black solid;
+    background: #E04C1F;
+    color: black;
+  }
+  
+  
+  @media screen and (min-width: 620px)
+  and (max-width: 1199px)  { /*tablet*/
+    .container {
+    grid-template-columns:
+       1fr 1fr;
+    grid-template-areas:
+      "heady heady"
+      "navvy navvy"
+      "mainy mainy"
+      "aside1 aside2"
+      "footy footy";
+    }
+  
+    nav ul {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    }
+  
+    nav ul li a {
+      display: inline;
+      padding: 10px 5px;
+      margin: 5px;
+      border: none;
+      background: #E04C1F;
+    }
+  
+  }/* end tablet medium media query */
+  
+  @media screen and (min-width: 1200px)
+  and (max-width: 2000px)  {
+  
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns:
+         1fr       2fr       1.5fr;
+        grid-template-areas:
+        "heady     heady     heady"
+        "navvy     navvy     navvy"
+        "aside1    mainy     aside2"
+        "footy     footy     footy";
+      }
+
+      nav ul {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        }
+      
+        nav ul li a {
+          display: inline;
+          padding: 10px 5px;
+          margin: 5px;
+          border: none;
+          background: #E04C1F;
+        }
+  }  /* end desktop large media query */
