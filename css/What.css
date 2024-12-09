@@ -16,22 +16,6 @@
 .skip-link {
   transition: transform 0.3s;
 }
-
-table, th, td {
-    border-collapse: collapse;
-  }
-  
-  table {
-    margin-bottom: 30px;
-  }
-  td {
-      border: 2px solid red;
-      text-align: center;
-      width: 400px;
-      background-color: #fff;
-      color: black;
-  }
-
 body {
     background: black;
     font-size: 15px;
@@ -78,7 +62,6 @@ p {
     line-height: 1.8em;
 }
 
-
 header,
 nav,
 main,
@@ -97,23 +80,7 @@ footer {
 nav{
     color: black;
 }
-#How,#Why, #What {
-    a:link {
-        color: white;
-    }
-    
-    a:hover {
-        color: red;
-    }
-    
-    a:active {
-        color: #d67907;
-    }
-    a:visited {
-        color: #fad000;
-    }
-    
-}
+  
 .container { /*mobile*/
   display: grid;
   grid-template-columns:
@@ -122,16 +89,14 @@ nav{
     "heady"
     "navvy"
     "mainy"
-    "aside1"
-    "aside2"
+    "aside"
     "footy";
   }
   
   header {grid-area: heady; background:#E0A71F;}
   nav {grid-area: navvy; background:#E06E1F;}
   main {grid-area: mainy; background: black; max-height: 100%;}
-  #Author {grid-area: aside1; background: Black;}
-  #Demographics {grid-area: aside2; background: Black;}
+  aside {grid-area: aside1; background: Black;}
   footer {grid-area: footy; background: #E0A71F;}
   
   
@@ -164,7 +129,7 @@ nav{
       "heady heady"
       "navvy navvy"
       "mainy mainy"
-      "aside1 aside2"
+      "aside aside"
       "footy footy";
     }
   
@@ -197,7 +162,7 @@ nav{
         grid-template-areas:
         "heady     heady     heady"
         "navvy     navvy     navvy"
-        "aside1    mainy     aside2"
+        "aside     mainy     mainy"
         "footy     footy     footy";
       }
 

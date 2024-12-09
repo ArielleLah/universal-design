@@ -1,0 +1,112 @@
+/*shows how to make different grids with the content*/
+
+body {
+    background: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+/* CSS RESET covers everything on the page and flattens everything */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: serif;
+    font-weight: normal;
+    padding: .2em 0; /*1st value top and bottom, 2nd is left and right*/
+}
+
+p {
+    margin: 1.8em 0;
+    line-height: 1.8em;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 1.5em;
+    border: 1px black solid;  /*puts a border around the boxes, boxes are each element*/
+}
+
+header,
+footer {
+    text-align: center; /*where text is within the box*/
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: gray;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: /*4 column layout, left 1 fraction, middle twice as big, right 1 fraction*/
+    1 fr    2fr     1fr;
+    grid-template-areas: /*gives the labels in rows with each section*/
+    "heady  heady   heady"
+    "navvy  navvy   navvy"
+    "aside1 mainy   aside2"
+    "footy  footy   footy";
+}
+/*defines all the grid areas labels from above, below*/
+header {grid-area: heady; background: violet;}
+nav {grid-area: navvy; background: paleturquoise;}
+main {grid-area: mainy; background: lightyellow; max-height: 100%;} /*max-height 100% makes sure all content is within area*/
+#aside1 {grid-area: aside1; background: lavenderblush;}
+#aside2 {grid-area: aside2; background: wheat}
+footer {grid-area: footy; background: rgb(171, 171, 171);} /*another way to use colors*/
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap; /*row makes it horizontal, nowrap means only 1 line*/
+    justify-content: space-around; /*distributes space equally*/
+}
+
+nav ul li {
+    list-style: none;
+}
+
+@media screen /*to reformat for tablet screens*/
+and (min-width: 641px)
+and (max-width: 900px) {
+.container {
+grid-template-columns:
+    1fr 1fr;
+grid-template-areas:
+    "heady heady"
+    "navvy  navvy"
+    "mainy mainy"
+    "aside1 aside2"
+    "footy footy";
+}
+}
+
+@media screen /*to reformat for cell phone screens*/
+and (max-width: 640px){
+.container{
+grid-template-columns:
+    1 fr;
+grid-template-areas:
+    "heady"
+    "mainy"
+    "aside1"
+    "aside2"
+    "navvy"
+    "footy";
+}
+nav ul {
+    display: block;
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px black solid;
+    background: white;
+}
+}
